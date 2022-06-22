@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teilnehmerliste</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <form>
+        <fieldset id="formular">
+          <legend>Teilnehmerliste</legend>
+          <div id="input">
+            <label for="teilnehmerInput">Name des Teilnehmers:</label>
+            <input
+              type="text"
+              id="teilnehmerInput"
+              placeholder="Max Mustermann"
+            />
+          </div>
+
+          <div id="action">
+            <input
+              type="button"
+              value="Hinzufügen"
+              onclick="hinzufügen(event)"
+            />
+            <input
+              type="button"
+              value="Rückgängig"
+              onclick="rückgängig(event)"
+            />
+          </div>
+
+          <div id="output">
+            <h2>Teilnehmer:</h2>
+            <p id="teilnehmerOutput"></p>
+          </div>
+
+          <div id="anzahl">
+            <h2>Gesamtanzahl:</h2>
+            <p id="anzahlTeilnehmer"></p>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
